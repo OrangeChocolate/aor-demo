@@ -16,5 +16,6 @@
   },
   "devDependencies": {
     "admin-on-rest": "^1.2.0"
-  }
+  },
+  "homepage" : "http://localhost/myapp"
 }
