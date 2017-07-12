@@ -2,6 +2,15 @@ export const AppTranslations = {
     en: {
         resources: {
             title: 'Wechat Redpacket',
+            option: {
+                name: 'Option',
+                fields: {
+                    id: 'ID',
+                    name: 'name',
+                    description: 'description',
+                    enable: 'enable',
+                }
+            },
             productDetail: {
                 name: 'ProductDetail',
                 fields: {
@@ -68,6 +77,15 @@ export const AppTranslations = {
     zh: {
         resources: {
             title: '微信红包平台',
+            option: {
+                name: '配置项',
+                fields: {
+                    id: 'ID',
+                    name: '名称',
+                    description: '描述',
+                    enable: '是否启用',
+                }
+            },
             productDetail: {
                 name: '产品详情',
                 fields: {

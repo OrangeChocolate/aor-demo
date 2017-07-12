@@ -10,6 +10,7 @@ import authClient from './authClient';
 import {REACT_APP_API_HOST} from './Configration';
 
 import Dashboard from './component/Dashboard';
+import {OptionList, OptionEdit} from './component/Option';
 import {ProductDetailList, ProductDetailEdit} from './component/ProductDetail';
 import {ProductList, ProductEdit, ProductCreate} from './component/Product';
 import {CityList} from './component/City';
@@ -29,6 +30,7 @@ const messages = {
 const App = () => (
     <Admin title='众信红包管理平台' authClient={authClient} restClient={springRestClient(`${REACT_APP_API_HOST}/api`)}
            dashboard={Dashboard} locale="zh" messages={messages}>
+        <Resource name="option" icon={BookIcon} list={OptionList} edit={OptionEdit}/>
         <Resource name="productDetail" icon={BookIcon} list={ProductDetailList} edit={ProductDetailEdit}/>
         <Resource name="product" icon={BookIcon} list={ProductList} edit={ProductEdit} create={ProductCreate}/>
         <Resource name="city" icon={BookIcon} list={CityList}/>
